@@ -38,7 +38,7 @@ Dimensionality Reduction involves cutting down the number of features (variables
 
 PCA (Principal Component Analysis) is  a core technique in dimensionality reduction, it identifies components that best capture data spread, allowing for data compression, noise reduction, visualization of patterns, and improved model efficiency by removing redundant features.  
 
-In this project, we experimentally applied to Logistic Regression, Random Forest, and k-NN to assess whether reducing 64 dimensions improves performance or efficiency. Results show PCA with 30 components slightly reduces Logistic Regression accuracy (97.22% vs 97.50%), while aggressive reduction to 2 components severely harms Random Forest and k-NN (dropping to ~60% accuracy). This finding suggests the original 64 features contain meaningful variance for classification that shouldn't be overly reduced.#
+In this project, we experimentally applied to Logistic Regression, Random Forest, and k-NN to assess whether reducing 64 dimensions improves performance or efficiency. Results show PCA with 30 components slightly reduces Logistic Regression accuracy (97.22% vs 97.50%), while aggressive reduction to 2 components severely harms Random Forest and k-NN (dropping to ~60% accuracy)-the original 64 features contain meaningful variance for classification that shouldn't be overly reduced.
 
 *Hyperparameter Tuning*
 
@@ -60,10 +60,10 @@ After optimization, models were evaluated using five complementary metrics: accu
 
 # EBI
 
-- Deeper Dive in Dimensionality ReductionL: Utalising PCA against other techniques like t-SNE or LDA for visualization to better understand the feature space
+-Deeper Dive in Dimensionality ReductionL: Utalising PCA against other techniques like t-SNE or LDA for visualization to better understand the feature space
   
-- Addressing Computational Efficiency: If analysis also considered model trade-offs, such as comparing the training/prediction speed and model size of SVM vs. k-NN vs. Random Forest. It would allow factoring for real-world deployment scenarios.
+-Addressing Computational Efficiency: If analysis also considered model trade-offs, such as comparing the training/prediction speed and model size of SVM vs. k-NN vs. Random Forest. It would allow factoring for real-world deployment scenarios.
   
-- Error Analysis and Misclassification Focus: Including an analysis visualizing the actual digit images that models consistently misclassified could reveal if errors are due to ambiguous handwriting, and if they are consistent across all top models.
+-Error Analysis and Misclassification Focus: Including an analysis visualizing the actual digit images that models consistently misclassified could reveal if errors are due to ambiguous handwriting, and if they are consistent across all top models.
 
-- Validation Stratergy Improvement: As Hyperparameter tuning was done on the same training set, having a dedicated validation set or nested cross-validation could ensure the tuned hyperparameters generalize perfectly to the held-out test set, providing a more rigorous estimate of final performance.
+-Validation Stratergy Improvement: As Hyperparameter tuning was done on the same training set, having a dedicated validation set or nested cross-validation could ensure the tuned hyperparameters generalize perfectly to the held-out test set, providing a more rigorous estimate of final performance.
