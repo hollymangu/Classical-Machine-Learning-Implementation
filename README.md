@@ -36,7 +36,7 @@ Each algorithm is first implemented in its default configuration to establish ba
 
 Dimensionality Reduction involves cutting down the number of features (variables/dimensions) in a dataset while keeping essential information, transforming high-dimensional data into a simpler, lower-dimensional space to prevent overfitting, speed up training, and make data easier to visualize and interpret.
 
-PCA (Principal Component Analysis) is  a core technique in machine learning components), it identifies components that best capture data spread, allowing for data compression, noise reduction, visualization of patterns, and improved model efficiency by removing redundant features.  
+PCA (Principal Component Analysis) is  a core technique in dimensionality reduction, it identifies components that best capture data spread, allowing for data compression, noise reduction, visualization of patterns, and improved model efficiency by removing redundant features.  
 
 In this project, we experimentally applied to Logistic Regression, Random Forest, and k-NN to assess whether reducing 64 dimensions improves performance or efficiency. Results show PCA with 30 components slightly reduces Logistic Regression accuracy (97.22% vs 97.50%), while aggressive reduction to 2 components severely harms Random Forest and k-NN (dropping to ~60% accuracy). This finding suggests the original 64 features contain meaningful variance for classification that shouldn't be overly reduced.#
 
